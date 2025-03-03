@@ -33,7 +33,13 @@ p:last-child { margin-bottom: 0px; }
 ul, ol { margin: 0; }
 .listnone { list-style: none; padding: 0px; }
 
-a { color: #0eb769; text-decoration: none; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+a { 
+  color: #0eb769; 
+  text-decoration: none; 
+  -webkit-transition: all 0.3s; 
+  -moz-transition: all 0.3s; 
+  transition: all 0.3s; 
+}
 a:focus, a:hover { text-decoration: none; color: #019852; }
 
 .lead { font-size: 21px; color: #3c3c3c; font-weight: 400; }
@@ -215,7 +221,14 @@ blockquote { padding: 10px 20px; margin: 0px; font-size: 21px; line-height: 32px
   box-sizing: border-box;
 }
 
-#navigation:after, #navigation > ul:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+#navigation:after, #navigation > ul:after { 
+  content: "."; 
+  display: block; 
+  clear: both; 
+  visibility: hidden; 
+  line-height: 0; 
+  height: 0; 
+}
 #navigation #menu-button { display: none; }
 #navigation { margin-top: 10px; }
 #navigation > ul > li { float: left; }
@@ -320,6 +333,7 @@ blockquote { padding: 10px 20px; margin: 0px; font-size: 21px; line-height: 32px
     padding: 18px !important;
   }
 }
+
 /* Mobile Navigation - Responsive menu for smaller screens */
 #navigation.small-screen { width: 100%; }
 #navigation.small-screen ul { width: 100%; display: none; }
@@ -329,7 +343,13 @@ blockquote { padding: 10px 20px; margin: 0px; font-size: 21px; line-height: 32px
 #navigation.small-screen > ul > li { float: none; }
 #navigation.small-screen ul ul li a { padding-left: 25px; }
 #navigation.small-screen ul ul li a { color: #474747; background: none; }
-#navigation.small-screen ul ul, #navigation.small-screen ul ul ul { position: relative; left: 0; width: 100%; margin: 0; text-align: left; }
+#navigation.small-screen ul ul, #navigation.small-screen ul ul ul { 
+  position: relative; 
+  left: 0; 
+  width: 100%; 
+  margin: 0; 
+  text-align: left; 
+}
 #navigation.small-screen #menu-button {
   display: block;
   padding: 15px;
@@ -482,20 +502,63 @@ blockquote { padding: 10px 20px; margin: 0px; font-size: 21px; line-height: 32px
   flex-direction: column;
 }
 
-.card-img { border-radius: 8px; margin-bottom: 15px; width: 100%; height: auto; }
-.card-title { font-size: 20px; color: #333; text-align: center; margin-bottom: 10px; }
+.card-img { 
+  border-radius: 8px; 
+  margin-bottom: 15px; 
+  width: 100%; 
+  height: auto; 
+}
+.card-title { 
+  font-size: 20px; 
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 10px; 
+}
 .card-body { flex-grow: 1; }
-.card-custom p { font-size: 14px; color: #666; margin-bottom: 10px; }
+.card-custom p { 
+  font-size: 14px; 
+  color: #666; 
+  margin-bottom: 10px; 
+}
 
 .service-img { margin-bottom: 30px; }
 .service-img img { width: 100%; }
-.service-title { font-size: 20px; color: #212330; text-transform: uppercase; text-align: center; letter-spacing: 1px; }
+.service-title { 
+  font-size: 20px; 
+  color: #212330; 
+  text-transform: uppercase; 
+  text-align: center; 
+  letter-spacing: 1px; 
+}
 
-/* Media Queries - Responsive adjustments for all sections */
+/* Section Scroll Offset - Smooth scrolling adjustment for all sections */
+section { scroll-margin-top: 80px; }
+
+@media (max-width: 768px) {
+  /* Increase scroll margin for mobile to ensure target sections are not hidden under fixed header */
+  section { scroll-margin-top: -20px; }
+}
+
+/* Hero Section Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+/* Mobile Navigation - Responsive menu for smaller screens */
 @media screen and (max-width: 768px) {
   .navigation { float: none; }
   .navbar-brand img.logo { width: 100px; }
 }
 
-/* Section Scroll Offset - Smooth scrolling adjustment for all sections */
-section { scroll-margin-top: 80px; }
+

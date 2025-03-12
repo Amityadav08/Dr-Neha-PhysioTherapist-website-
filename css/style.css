@@ -630,9 +630,10 @@ blockquote { padding: 10px 20px; margin: 0px; font-size: 21px; line-height: 32px
 /* Section Scroll Offset - Smooth scrolling adjustment for all sections */
 section { scroll-margin-top: 80px; }
 
-@media (max-width: 768px) {
-  /* Increase scroll margin for mobile to ensure target sections are not hidden under fixed header */
-  section { scroll-margin-top: -20px; }
+@media (max-width: 767px) {
+  section {
+    scroll-margin-top: -10px; /* Adjust this value as needed */
+  }
 }
 
 /* Hero Section Responsive Adjustments */

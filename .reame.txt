@@ -1,0 +1,45 @@
+drnehawebsite/
+├─ .vscode/
+│  └─ settings.json
+├─ css/
+│  ├─ bootstrap.min.css
+│  ├─ font-awesome.min.css
+│  └─ style.css
+├─ images/
+│  ├─ galary pic/
+│  │  ├─ clinictreatment.jpeg
+│  │  ├─ digital_care.webp
+│  │  ├─ physiohomevisit.avif
+│  │  ├─ WhatsApp Image 2025-03-03 at 14.31.16 (1).jpeg
+│  │  ├─ WhatsApp Image 2025-03-03 at 14.31.16.jpeg
+│  │  ├─ WhatsApp Image 2025-03-03 at 14.31.17 (1).jpeg
+│  │  └─ WhatsApp Image 2025-03-03 at 14.31.17 (2).jpeg
+│  ├─ icons/
+│  │  ├─ happy.png
+│  │  ├─ quality.png
+│  │  ├─ robotic-surgery.png
+│  │  ├─ talent-management.png
+│  │  └─ touch.png
+│  ├─ Dr Neha Vertical 24x20 inch.png
+│  ├─ drsample.webp
+│  ├─ footermainbanner.jpg
+│  ├─ googleicon.png
+│  ├─ hero-img.jpg
+│  ├─ logonavbar.jpg
+│  ├─ logooriginallarge.png
+│  ├─ original1.jpg
+│  ├─ service1.jpg
+│  ├─ service2.jpg
+│  ├─ service3.webp
+│  ├─ service4.webp
+│  ├─ service5.jpg
+│  └─ sticky.png
+├─ js/
+│  ├─ back-to-top.js
+│  ├─ bootstrap.min.js
+│  ├─ jquery.min.js
+│  ├─ jquery.sticky.js
+│  ├─ menumaker.js
+│  ├─ menumaker.min.js
+│  └─ sticky-header.js
+└─ index.html

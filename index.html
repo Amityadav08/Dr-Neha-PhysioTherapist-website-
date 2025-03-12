@@ -29,54 +29,67 @@
 </head>
 
 <body>
-  
-<!-- HEADER TOP -->
-<div class="header-top hidden-xs hidden-sm">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <span class="time-text">
-          Morning: <strong>10 am - 1 pm</strong> | Evening: <strong>5 to 8 pm</strong>
-        </span>
-      </div>
-      <div class="col-md-8 text-right">
-        <a href="tel:+919876543210" class="call-no" style="text-decoration: none; color: inherit;">
-          +91 98765 43210 /
-        </a>
-        <a href="tel:+919876543210" class="call-no" style="text-decoration: none; color: inherit;">
-          +91 98765 43210 |
-        </a>
-        <a href="mailto:contact@drnehaphysio.com" class="mail-text" style="text-decoration: none; color: inherit;">
-          contact@drnehaphysio.com
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
 
+<style>
+.header .navigation ul {
+    font-family: 'Lato', sans-serif;
+}
 
-  <!-- MAIN HEADER / NAVIGATION -->
-  <header class="header">
+.header .navigation ul li a {
+    font-weight: 600; /* Semi-bold */
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.header .navigation ul li a:hover {
+    font-weight: 700; /* Bold on hover */
+    color: #2A5CFF;
+}
+
+.header .navigation ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: #2A5CFF;
+    transition: all 0.3s ease;
+}
+
+.header .navigation ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.header .navigation ul li.active a {
+    font-weight: 700;
+    color: #2A5CFF;
+}
+</style>
+
+<!-- MAIN HEADER / NAVIGATION -->
+<header class="header">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-12">
-          <a href="#home"><img src="images/logonavbar.jpg" alt="Dr Neha Physiotherapy Logo" class="logo"></a>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <a href="#home"><img src="images/logonavbar.jpg" alt="Dr Neha Physiotherapy Logo" class="logo"></a>
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <nav id="navigation" class="navigation">
+                    <ul>
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#map">Find Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="col-md-8 col-sm-12">
-          <nav id="navigation" class="navigation">
-            <ul>
-              <li class="active"><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#map">Find Us</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
     </div>
-  </header>
+</header>
   <script>
     $(document).ready(function(){
       $('.navbar-nav li a').on('click', function(){
@@ -84,37 +97,111 @@
       });
     });
     </script>
-  <!-- HERO SECTION -->
-  <section id="home" class="hero-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Hero Text -->
-        <div class="col-md-5" data-aos="fade-right">
-          <h1 class="hero-title" style="font-family: 'DM Serif Display', serif;">
-            Dr. Neha's Physio Transcend™
-          </h1>
-          <p class="hero-text" style="font-family: 'Poppins', sans-serif;">
-            A helping hand towards 'Faster Recovery' &amp; 'Lasting Results'
-          </p>          
-          <a href="#contact" class="btn btn-default" style="font-family: 'Poppins', sans-serif;">
+  >
+<!-- HERO SECTION -->
+<section id="home" class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Hero Text -->
+      <div class="col-md-5" data-aos="fade-right">
+        <h1 class="hero-title" style="font-family: 'DM Serif Display', serif; margin-bottom: 0; letter-spacing: 1px;">
+          Dr. Neha's
+        </h1>
+        <h1 class="hero-title" style="font-family: 'DM Serif Display', serif; margin-top: 0; letter-spacing: 1px;">
+          Physio Transcend™
+        </h1>
+        <p class="hero-text" style="font-family: 'Poppins', sans-serif; letter-spacing: 0.5px;">
+          A helping hand towards 'Faster Recovery' &amp; 'Lasting Results'
+        </p>
+        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+          <a href="#contact" class="btn" 
+             style="font-family: 'Poppins', sans-serif; background-color: #0eb769; color: #fff; padding: 15px 30px; border-radius: 30px; text-transform: uppercase;">
             Book Appointment
           </a>
+          <a href="tel:9820279094" class="btn" 
+             style="font-family: 'Poppins', sans-serif; background-color: #4A90E2; color: #fff; padding: 15px 30px; border-radius: 30px; text-transform: uppercase;">
+            Call Now
+          </a>
         </div>
-        <!-- (Optional) Hero Image/Slider can be added on the right -->
+      </div>
+      <!-- (Optional) Hero Image/Slider can be added on the right -->
+    </div>
+  </div>
+</section>
+
+<!-- 360 DEGREE PHYSIO CARE SECTION -->
+<section id="care360" class="space-small">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row text-center mb60">
+      <div class="col-md-12">
+        <h2 class="section-title">360 Degree Physio Care</h2>
+        <p class="section-subtitle">
+          We are committed to ensuring that our clients have easy access to our physiotherapy services – whether at our advanced clinics or through convenient home visits.
+        </p>
       </div>
     </div>
-  </section>
-  <!-- ABOUT SECTION -->
+    <!-- Three Columns -->
+    <div class="row equal-height">
+      <!-- Column 1: Clinic Treatments -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100" >
+        <div class="care-card" style="background-color: #eafbe7;">
+          <div class="care-card-img">
+            <img src="images/galary pic/clinictreatment.jpeg" alt="Clinic Treatments">
+          </div>
+          <div class="care-card-body">
+            <h3 class="care-card-title">Clinic Treatments</h3>
+            <p class="care-card-text" id="clinicpar">
+              Receive high-quality physiotherapy care at our modern clinics, where innovation and expertise ensure optimal recovery.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Column 2: Physio Home Visits -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="care-card" style="background-color: #fff4e5;">
+          <div class="care-card-img">
+            <img src="images/galary pic/physiohomevisit.avif" alt="Physio Home Visits">
+          </div>
+          <div class="care-card-body">
+            <h3 class="care-card-title">Physio Home Visits</h3>
+            <p class="care-card-text">
+              Certified physiotherapists provide personalized home visits, ensuring you receive expert care right where you need it.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Column 3: Digital Care (FIZO) -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="care-card" style="background-color: #e8f4fd;">
+          <div class="care-card-img">
+            <img src="images/galary pic/digital_care.webp" alt="Digital Care (FIZO)">
+          </div>
+          <div class="care-card-body">
+            <h3 class="care-card-title">Digital Care </h3>
+            <p class="care-card-text">
+              Our Digital Physio Assistant, delivers personalized physiotherapy exercises at home – making recovery affordable and accessible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- OVERVIEW SECTION -->
+
+
+
 <!-- ABOUT SECTION -->
-<section id="about" class="space-medium">
+<section id="about" class="space-small">
   <div class="container">
     <!-- Section Title -->
     <div class="row text-center mb60">
-      <div class="col-md-12">
-        <h2 style="font-family: 'DM Serif Display', serif; font-size: 48px;">
-          About Dr. Neha Goraksha Bidvai
+      <!-- <div class="col-md-12">
+        <h2 style="font-family: 'Lato ', sans-serif; font-size: 48px;">
+            ABOUT
         </h2>
-      </div>
+      </div> -->
     </div>
     <div class="row">
       <!-- Left Column: Photo -->
@@ -123,6 +210,7 @@
       </div>
       <!-- Right Column: Biography -->
       <div class="col-md-6" data-aos="fade-left" style="font-family: 'Poppins', sans-serif; font-size: 18px; line-height: 1.6;">
+        <h1>Dr. Neha Goraksha Bidvai</h1>
         <p>
           Dr. Neha Goraksha Bidvai is a passionate and innovative physiotherapist with over 12 years of dedicated experience in restoring mobility and alleviating pain. Her patient-centric approach is built on evidence-based care, empowering individuals to reclaim a vibrant, active life.
         
@@ -148,102 +236,255 @@
     </div>
   </div>
 </section>
-
 <!-- OUR SPECIALITY SECTION -->
-<section id="services" class="space-medium bg-default" style="background-color: #2c2c2c; padding: 60px 0;">
+<section id="services" class="space-medium" style="background-color: #fff; padding: 40px 0;">
   <div class="container">
     <!-- Section Header -->
     <div class="row text-center mb60">
       <div class="col-md-12">
-        <h2 style="font-family: 'DM Serif Display', serif; font-size: 60px; letter-spacing: 2px; color: #fff;">
-          Our Speciality
+        <h2 style="font-family: 'Lato', sans-serif; font-size: 48px; letter-spacing: 2px; color: #130b0b; margin-bottom: 20px;">
+          Therapies Offered
         </h2>
-        <!-- Gradient line -->
-        <div style="width: 120px; height: 4px; background: linear-gradient(to right, #A3E063, #F57F20, #4A90E2); margin: 20px auto;"></div>
-        <p style="font-family: 'Poppins', sans-serif; font-size: 18px; color: #fff;">
-          Discover our comprehensive, specialized physiotherapy treatments designed for optimal recovery.
+        <p style="font-family: 'Roboto', sans-serif; font-size: 20px; color: #666; max-width: 700px; margin: 0 auto;">
+          Explore our specialized treatments tailored for your optimal recovery. Our comprehensive approach ensures you receive the most effective care for your specific needs.
         </p>
       </div>
     </div>
-    <!-- First Row: Three Cards -->
+    
+    <!-- Grid of 12 Cards (3 cards per row) -->
     <div class="row equal-height">
-      <!-- Card 1: Orthopedic Physiotherapy -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card-custom" style="border: 2px solid #A3E063; background: #fff;">
-          <img src="images/service1.jpg" alt="Orthopedic Physiotherapy" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title text-center" style="font-family: 'DM Serif Display', serif;">
-              Orthopedic Physiotherapy
-            </h3>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Focus:</strong> Treatment of musculoskeletal conditions affecting bones, joints, muscles, and tendons.</p>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Conditions Treated:</strong> Arthritis, Joint Pain, Neck Pain, Lower Back Pain, Spondylitis, Slipped Disc, Frozen Shoulder, Plantar Fasciitis, Fibromyalgia.</p>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Objective:</strong> Alleviate pain, improve mobility, and restore functional movement.</p>
+      <!-- Card 1: Exercise Therapy (Bg: #eafbe7) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="speciality-card" style="background: #eafbe7; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/exercise.png" alt="Exercise Therapy Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Exercise Therapy<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Move better, feel stronger! Targeted exercises to improve strength, flexibility, and function.
+                </span>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Card 2: Geriatric Physiotherapy -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card-custom" style="border: 2px solid #F57F20; background: #fff;">
-          <img src="images/service2.jpg" alt="Geriatric Physiotherapy" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title text-center" style="font-family: 'DM Serif Display', serif;">
-              Geriatric Physiotherapy
-            </h3>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Focus:</strong> Specialized care for older adults with comprehensive evaluation of musculoskeletal and balance issues.</p>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Conditions Treated:</strong> Balance Impairment, Joint Pain, Generalized Weakness, Postural Instability, and related concerns.</p>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Objective:</strong> Enhance mobility, reduce fall risk, and promote independence in daily activities.</p>
+      
+      <!-- Card 2: Electrotherapy (Bg: #fff4e5) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="speciality-card" style="background: #fff4e5; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #FFB340; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/electrotherapy.png" alt="Electrotherapy Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Electrotherapy<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Healing with technology! Ultrasound, electrical stimulation, and laser therapy for pain relief.
+                </span>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Card 3: Post Surgery Physiotherapy -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card-custom" style="border: 2px solid #4A90E2; background: #fff;">
-          <img src="images/service3.webp" alt="Post Surgery Physiotherapy" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title text-center" style="font-family: 'DM Serif Display', serif;">
-              Post Surgery Physiotherapy
-            </h3>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Focus:</strong> Rehabilitation after surgical procedures.</p>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Procedures Supported:</strong> Knee &amp; Hip Replacement, Ligament Reconstruction, Rotator Cuff Repair, Fracture Fixation, Spine Surgeries.</p>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Objective:</strong> Facilitate healing, improve strength, and regain range of motion.</p>
+      
+      <!-- Card 3: Manual Therapy (Bg: #e8f4fd) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="speciality-card" style="background: #e8f4fd; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #4285F4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/manual.png" alt="Manual Therapy Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Manual Therapy<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Hands-on healing! Gentle techniques to ease pain and restore mobility.
+                </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 4: Dry Needling / Cupping (Bg: #eafbe7) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="250">
+        <div class="speciality-card" style="background: #eafbe7; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/dry-needling.png" alt="Dry Needling / Cupping Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Dry Needling / Cupping<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Relieve pain and relax muscles with fine needles and suction therapy.
+                </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 5: Balance Training (Bg: #fff4e5) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="speciality-card" style="background: #fff4e5; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #FFB340; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/balance.png" alt="Balance Training Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Balance Training<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Improve stability and coordination to prevent falls.
+                </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 6: Sports Rehab (Bg: #e8f4fd) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="350">
+        <div class="speciality-card" style="background: #e8f4fd; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #4285F4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/sports-rehab.png" alt="Sports Rehab Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Sports Rehab<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Rehab programs designed for athletes to prevent and treat injuries.
+                </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 7: Women's Health (Bg: #eafbe7) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="speciality-card" style="background: #eafbe7; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/womens-health.png" alt="Women's Health Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Women's Health<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Physiotherapy for pregnancy, postnatal recovery, and pelvic health.
+                </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 8: Kinesiology Taping (Bg: #fff4e5) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="450">
+        <div class="speciality-card" style="background: #fff4e5; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #FFB340; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/kinesiology.png" alt="Kinesiology Taping Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Kinesiology Taping<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Support that moves with you! Elastic taping to reduce pain and boost muscle function.
+                </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 9: Customised Insoles (Bg: #e8f4fd) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="speciality-card" style="background: #e8f4fd; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #4285F4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/insoles.png" alt="Customised Insoles Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Customised Insoles<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Personalized foot support for improved posture and reduced pain.
+                </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 10: Orthopaedic Rehab (Bg: #eafbe7) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="550">
+        <div class="speciality-card" style="background: #eafbe7; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/orthopaedic.png" alt="Orthopaedic Rehab Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Orthopaedic Rehab<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Rehab for arthritis, fractures, and injuries to promote stronger joints and pain-free movement.
+                </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 11: Pre & Post-Surgical Rehab (Bg: #fff4e5) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="speciality-card" style="background: #fff4e5; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #FFB340; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/pre-post-surgery.png" alt="Pre &amp; Post-Surgical Rehab Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Pre &amp; Post-Surgical Rehab<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Therapy before and after surgery to regain strength and mobility.
+                </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 12: Oncology Rehab (Bg: #e8f4fd) -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="650">
+        <div class="speciality-card" style="background: #e8f4fd; border: none; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="speciality-item" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="icon-circle" style="width: 100px; height: 100px; background: #f8f8f8; border: 3px solid #4285F4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+              <img src="images/icons/oncology.png" alt="Oncology Rehab Icon" style="width: 60%; height: 60%; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+            </div>
+            <div class="speciality-text" style="flex: 1; text-align: center;">
+              <h3 style="font-family: 'Lato', sans-serif; font-size: 24px; color: #130b0b; margin: 0 0 15px;">
+                Oncology Rehab<br>
+                <span style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #333;">
+                  Gentle exercises to improve mobility, manage fatigue, and reduce lymphoedema during and after treatment.
+                </span>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Second Row: Two Cards (Centered) -->
-    <div class="row equal-height">
-      <!-- Card 4: Oncology Physiotherapy -->
-      <div class="col-md-4 col-md-offset-2" data-aos="fade-up" data-aos-delay="400">
-        <div class="card-custom" style="border: 2px solid #EC008C; background: #fff;">
-          <img src="images/service4.webp" alt="Oncology Physiotherapy" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title text-center" style="font-family: 'DM Serif Display', serif;">
-              Oncology Physiotherapy
-            </h3>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Focus:</strong> Supportive care during cancer treatment.</p>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Programs Offered:</strong> MOBILITY &amp; STEEL (Pre &amp; Post-operative), Lymphatic Drainage, Fatigue Management, Resistance Training.</p>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Objective:</strong> Enhance mobility, reduce treatment side effects, and improve overall well-being.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Card 5: Sports Injury Physiotherapy -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="card-custom" style="border: 2px solid #F5B041; background: #fff;">
-          <img src="images/service5.jpg" alt="Sports Injury Physiotherapy" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title text-center" style="font-family: 'DM Serif Display', serif;">
-              Sports Injury Physiotherapy
-            </h3>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Focus:</strong> Rehabilitation for sports-related injuries.</p>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Conditions Treated:</strong> Ligament Injuries, Ankle Sprain, Shoulder Injuries, Meniscal Injuries, Overuse Injuries, Tennis Elbow.</p>
-            <p style="font-family: 'Poppins', sans-serif;"><strong>Objective:</strong> Restore athletic performance and prevent future injuries.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Consultation Button -->
     <div class="row mt60 text-center">
-      <a href="https://wa.me/919829279094" target="_blank" class="btn btn-default" style="font-family: 'Poppins', sans-serif; padding: 15px 30px; background: #25D366; border: none; border-radius: 30px; font-size: 18px; color: #fff; transition: background 0.3s ease;" onmouseover="this.style.background='#1EBE57'" onmouseout="this.style.background='#25D366'">
-         Get a Consultation
+      <a href="https://wa.me/919820279094" target="_blank" class="btn btn-default" style="font-family: 'Poppins', sans-serif; padding: 10px 40px; background: #25D366; border: none; border-radius: 30px; font-size: 20px; color: #fff; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        <span style="margin-right: 7px;">📞</span> Get a Consultation
       </a>
     </div>
   </div>
@@ -255,10 +496,10 @@
     <!-- Section Title -->
     <div class="row text-center mb60">
       <div class="col-md-12">
-        <h2 style="font-family: 'DM Serif Display', serif; font-size: 48px; color: #333;">
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 48px; color: #333; margin: 20px auto;">
           Our Advantages
         </h2>
-        <div style="width: 100px; height: 3px; background: linear-gradient(to right, #A3E063, #F57F20, #4A90E2); margin: 20px auto;"></div>
+
         <p style="font-family: 'Poppins', sans-serif; font-size: 18px; color: #666;">
           Experience personalized, expert, and holistic care that makes a difference.
         </p>
@@ -320,7 +561,60 @@
       card.style.transform = 'translateY(0)';
     });
   });
-</script>
+</script><section id="overview" style="background-color: #e8eafd;margin-bottom: -5px ;" class="space-small">
+  <div class="container">
+    <div class="row">
+      <!-- Item 1: 35+ Years of Collective Experience -->
+      <div class="col-md-3 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="overview-item horizontal">
+          <div class="overview-icon">
+            <img src="images/icons/talent-management.png" alt="35+ Years Icon" class="icons">
+          </div>
+          <div class="overview-text-container">
+            <h4 class="overview-title">15+ Years</h4>
+            <p class="overview-desc">of Collective Experience</p>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2: 10,000+ Happy Patients -->
+      <div class="col-md-3 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="overview-item horizontal">
+          <div class="overview-icon">
+            <img src="images/icons/happy.png" alt="10,000+ Happy Patients Icon">
+          </div>
+          <div class="overview-text-container">
+            <h4 class="overview-title">2000 +</h4>
+            <p class="overview-desc">Happy Patients</p>
+          </div>
+        </div>
+      </div>
+      <!-- Item 3: 1200+ Surgeries Avoided -->
+      <div class="col-md-3 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="overview-item horizontal">
+          <div class="overview-icon">
+            <img src="images/icons/touch.png" alt="1200+ Surgeries Avoided Icon">
+          </div>
+          <div class="overview-text-container">
+            <h4 class="overview-title">2005 +</h4>
+            <p class="overview-desc">Surgeries Avoided</p>
+          </div>
+        </div>
+      </div>
+      <!-- Item 4: Equipped with Latest Technologies -->
+      <div class="col-md-3 col-sm-6 col-xs-6" data-aos="fade-up" data-aos-delay="250">
+        <div class="overview-item horizontal">
+          <div class="overview-icon">
+            <img src="images/icons/robotic-surgery.png" alt="Latest Technologies Icon">
+          </div>
+          <div class="overview-text-container">
+            <h4 class="overview-title">Latest Tech</h4>
+            <p class="overview-desc">Innovative Solutions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- GOOGLE REVIEWS SECTION -->
 <section id="google-reviews" class="space-medium" style="background: #f4f4f4; padding: 40px 0;">
   <div class="container">
@@ -582,8 +876,8 @@
     <!-- Section Title -->
     <div class="row text-center mb-5">
       <div class="col-md-12">
-        <h2 style="font-family: 'DM Serif Display', serif; font-size: 42px; color: #2A5C82;">Frequently Asked Questions</h2>
-        <div style="width: 120px; height: 4px; background: linear-gradient(to right, #A3E063, #F57F20, #4A90E2); margin: 25px auto; border-radius: 2px;"></div>
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 42px; color: #2A5C82; margin: 25px auto;">Frequently Asked Questions</h2>
+
       </div>
     </div>
 
@@ -696,17 +990,17 @@
       <!-- Contact Info -->
       <div class="col-md-6 mb-5 mb-md-0">
         <div class="contact-card" style="background: rgba(255,255,255,0.9); padding: 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
-          <h2 style="font-family: 'DM Serif Display', serif; color: #2A5C82; margin-bottom: 30px;">
+          <h2 style="font-family: 'DM Serif Display', serif; color: #000000; margin-bottom: 30px;">
             Get in Touch
           </h2>
           <div style="text-align: left;">
             <!-- Clinic Address -->
             <div class="info-item" style="margin-bottom: 40px; display: flex; align-items: flex-start;">
               <div style="flex: 0 0 auto; margin-right: 10px;">
-                <i class="fas fa-map-marker-alt" style="color: #f32e2e; font-size: 20px;"></i>
+                <i class="fas fa-map-marker-alt" style="color: #3760e8; font-size: 20px;"></i>
               </div>
               <div style="flex: 1;">
-                <h3 style="font-family: 'Poppins', sans-serif; color: #d42929; margin: 0 0 5px 0;">Clinic Address</h3>
+                <h3 style="font-family: 'Poppins', sans-serif; color: #3760e8; margin: 0 0 5px 0;">Clinic Address</h3>
                 <p style="color: #171111; margin: 0;">
                   No.2, J D Alves Premises, Next to Bandra Medical Stores,<br>
                   Hill Road, Bandra (West), Mumbai - 400 050
@@ -717,13 +1011,13 @@
             <!-- Call Us -->
             <div class="info-item" style="margin-bottom: 40px; display: flex; align-items: flex-start;">
               <div style="flex: 0 0 auto; margin-right: 10px;">
-                <i class="fas fa-phone" style="color: #4A90E2; font-size: 20px;"></i>
+                <i class="fas fa-phone" style="color: #3760e8; font-size: 20px;"></i>
               </div>
               <div style="flex: 1;">
-                <h3 style="font-family: 'Poppins', sans-serif; color: #1c4ef3; margin: 0 0 5px 0;">Call Us</h3>
+                <h3 style="font-family: 'Poppins', sans-serif; color: #3760e8; margin: 0 0 5px 0;">Call Us</h3>
                 <p style="color: rgb(122, 67, 67); margin: 0;">
-                  <a href="tel:+919829279094" style="color: #19222c; text-decoration: none;">+91 98292 79094</a><br>
-                  <a href="tel:+919860317040" style="color: #101a26; text-decoration: none;">+91 98603 17040</a>
+                  <a href="tel:+919820279094" style="color: #19222c; text-decoration: none;">+91 9820279094</a>
+                  
                 </p>
               </div>
             </div>
@@ -731,13 +1025,14 @@
             <!-- Working Hours -->
             <div class="info-item" style="margin-bottom: 40px; display: flex; align-items: flex-start;">
               <div style="flex: 0 0 auto; margin-right: 10px;">
-                <i class="fas fa-clock" style="color: #76c562; font-size: 20px;"></i>
+                <i class="fas fa-clock" style="color: #3760e8; font-size: 20px;"></i>
               </div>
               <div style="flex: 1;">
-                <h3 style="font-family: 'Poppins', sans-serif; color: #47cc52; margin: 0 0 5px 0;">Working Hours</h3>
+                <h3 style="font-family: 'Poppins', sans-serif; color: #3760e8; margin: 0 0 5px 0;">Working Hours</h3>
                 <p style="color: #0e0909; margin: 0;">
-                  Morning: 10 AM - 1 PM<br>
+                  Morning: 9 AM - 2 PM<br>
                   Evening: 5 PM - 8 PM<br>
+                  Saturday:9 AM - 2 PM<br>
                   Sunday: Closed
                 </p>
               </div>
@@ -752,13 +1047,13 @@
           <div class="icon-wrapper mb-4" style="font-size: 60px; color: #25D366;">
             <i class="fab fa-whatsapp"></i>
           </div>
-          <h2 style="font-family: 'DM Serif Display', serif; color: #2A5C82; margin-bottom: 20px;">
+          <h2 style="font-family: 'DM Serif Display', serif; color: #3760e8; margin-bottom: 20px;">
             Instant Consultation
           </h2>
           <p style="color: #666; margin-bottom: 30px; font-size: 18px;">
             Get quick answers to your health concerns. Start a conversation with our physiotherapy experts now.
           </p>
-          <a href="https://wa.me/919876543210" target="_blank" 
+          <a href="https://wa.me/919820279094" target="_blank" 
              class="btn btn-primary" 
              style="background: #25D366; border: none; padding: 15px 40px; font-size: 18px; border-radius: 50px; transition: all 0.3s ease; margin-top: 20px;">
             <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
@@ -802,8 +1097,8 @@
     <h2 class="widget-title" style="font-family: 'Poppins', sans-serif;">Clinic Address</h2>
     <ul class="listnone contact" style="font-family: 'Roboto', sans-serif;">
       <li><i class="fas fa-map-marker-alt"></i> No.2, J D Alves Premises, Next to Bandra Medical Stores, Hill Road, Bandra (West), Mumbai - 400 050</li>
-      <li><i class="fas fa-phone"></i> +91 98203 17040</li>
-      <li><i class="fas fa-phone"></i> +91 98603 17040</li>
+      <li><i class="fas fa-phone"></i> +91 98202 79094</li>
+      
       <li><i class="fas fa-envelope"></i> contact@drnehaphysio.com</li>
     </ul>
   </div>
@@ -814,8 +1109,8 @@
   <div class="footer-widget">
     <h2 class="widget-title" style="font-family: 'Poppins', sans-serif;">Quick Contact</h2>
     <div style="margin-top: 10px;">
-      <a href="https://wa.me/919876543210" target="_blank" class="icon-link"><i class="fab fa-whatsapp"></i></a>
-      <a href="tel:+919820317040" class="icon-link"><i class="fas fa-phone"></i></a>
+      <a href="https://wa.me/919820279094" target="_blank" class="icon-link"><i class="fab fa-whatsapp"></i></a>
+      <a href="tel:+919820279094" class="icon-link"><i class="fas fa-phone"></i></a>
       <a href="mailto:contact@drnehaphysio.com" class="icon-link"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
@@ -830,7 +1125,7 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <div class="copyright-content" style="color: #f1f1f1; font-size: 14px;">
-          © Dr Neha Physiotherapy 2025 | All rights reserved. Design by <a href="https://designblast.org/" target="_blank" style="color: #f1f1f1; text-decoration: none;">DesignBlast</a>
+          aAll rights reserved. Design by <a href="https://designblast.org/" target="_blank" style="color: #f1f1f1; text-decoration: none;">DesignBlast</a>
         </div>
       </div>
     </div>

@@ -31,65 +31,53 @@
 <body>
 
 
-<style>
-.header .navigation ul {
-    font-family: 'Lato', sans-serif;
-}
 
-.header .navigation ul li a {
-    font-weight: 600; /* Semi-bold */
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.header .navigation ul li a:hover {
-    font-weight: 700; /* Bold on hover */
-    color: #2A5CFF;
-}
-
-.header .navigation ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 50%;
-    background-color: #2A5CFF;
-    transition: all 0.3s ease;
-}
-
-.header .navigation ul li a:hover::after {
-    width: 100%;
-    left: 0;
-}
-
-.header .navigation ul li.active a {
-    font-weight: 700;
-    color: #2A5CFF;
-}
-</style>
+  
 
 <!-- MAIN HEADER / NAVIGATION -->
 <header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-12">
-                <a href="#home"><img src="images/logonavbar.jpg" alt="Dr Neha Physiotherapy Logo" class="logo"></a>
-            </div>
-            <div class="col-md-8 col-sm-12">
-                <nav id="navigation" class="navigation">
-                    <ul>
-                        <li class="active"><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#map">Find Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <a href="#home">
+          <img src="images/logo-navbar1.jpg" alt="Dr Neha Physiotherapy Logo" class="logo">
+        </a>
+      </div>
+      <div class="col-md-8 col-sm-12">
+        <nav id="navigation" class="navigation">
+          <ul>
+            <li class="active">
+              <a href="#home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+            </i> About
+              </a>
+            </li>
+            <li>
+              <a href="#services">
+                </i> Services
+              </a>
+            </li>
+            <li>
+              <a href="#map">
+               Find Us
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+            Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
+  </div>
 </header>
+
   <script>
     $(document).ready(function(){
       $('.navbar-nav li a').on('click', function(){
@@ -196,13 +184,7 @@
 <section id="about" class="space-small">
   <div class="container">
     <!-- Section Title -->
-    <div class="row text-center mb60">
-      <!-- <div class="col-md-12">
-        <h2 style="font-family: 'Lato ', sans-serif; font-size: 48px;">
-            ABOUT
-        </h2>
-      </div> -->
-    </div>
+    
     <div class="row">
       <!-- Left Column: Photo -->
       <div class="col-md-6" data-aos="fade-right">
@@ -236,13 +218,13 @@
     </div>
   </div>
 </section>
-<!-- OUR SPECIALITY SECTION -->
+<!-- THEREPIES WE OFFERED  SECTION -->
 <section id="services" class="space-medium" style="background-color: #fff; padding: 40px 0;">
   <div class="container">
     <!-- Section Header -->
     <div class="row text-center mb60">
       <div class="col-md-12">
-        <h2 style="font-family: 'Lato', sans-serif; font-size: 48px; letter-spacing: 2px; color: #130b0b; margin-bottom: 20px;">
+        <h2 class="mobile-heading" style="font-family: 'Lato', sans-serif; font-size: 48px; letter-spacing: 2px; color: #130b0b; margin-bottom: 20px;">
           Therapies Offered
         </h2>
         <p style="font-family: 'Roboto', sans-serif; font-size: 20px; color: #666; max-width: 700px; margin: 0 auto;">
@@ -483,8 +465,8 @@
     </div>
     <!-- Consultation Button -->
     <div class="row mt60 text-center">
-      <a href="https://wa.me/919820279094" target="_blank" class="btn btn-default" style="font-family: 'Poppins', sans-serif; padding: 10px 40px; background: #25D366; border: none; border-radius: 30px; font-size: 20px; color: #fff; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-        <span style="margin-right: 7px;">📞</span> Get a Consultation
+      <a href="https://wa.me/919820279094" target="_blank" class="btn btn-default" style="font-family: 'Poppins', sans-serif; padding: 10px 40px;  background: #25D366; border: none; border-radius: 30px; font-size: 20px; color: #fff; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        <i class="fab fa-whatsapp mr-2"></i> Get a Consultation
       </a>
     </div>
   </div>
@@ -496,7 +478,7 @@
     <!-- Section Title -->
     <div class="row text-center mb60">
       <div class="col-md-12">
-        <h2 style="font-family: 'DM Serif Display', serif; font-size: 48px; color: #333; margin: 20px auto;">
+        <h2  class="mobile-heading" style="font-family: 'DM Serif Display', serif; font-size: 48px; color: #333; margin: 20px auto;">
           Our Advantages
         </h2>
 
@@ -561,7 +543,10 @@
       card.style.transform = 'translateY(0)';
     });
   });
-</script><section id="overview" style="background-color: #e8eafd;margin-bottom: -5px ;" class="space-small">
+</script>
+
+<!-- overview Section -->
+<section id="overview" style="background-color: #e8eafd;margin-bottom: -5px ;" class="space-small">
   <div class="container">
     <div class="row">
       <!-- Item 1: 35+ Years of Collective Experience -->
@@ -572,7 +557,7 @@
           </div>
           <div class="overview-text-container">
             <h4 class="overview-title">15+ Years</h4>
-            <p class="overview-desc">of Collective Experience</p>
+            <p class="overview-desc">of Total Experience</p>
           </div>
         </div>
       </div>
@@ -608,7 +593,7 @@
           </div>
           <div class="overview-text-container">
             <h4 class="overview-title">Latest Tech</h4>
-            <p class="overview-desc">Innovative Solutions</p>
+            <p class="overview-desc">Innovative Solution</p>
           </div>
         </div>
       </div>
@@ -969,8 +954,8 @@
 <section id="map" style="position: relative; width: 100%; height: 100vh; padding: 10px; box-sizing: border-box; margin: 0;">
   <div class="container-fluid" style="padding: 0;">
     <div class="row">
-      <div class="col-md-12">
-        <h2 style="font-family: 'DM Serif Display', serif; font-size: 48px; color: #333; text-align: center; margin: 20px 0 80px;">
+      <div class="mobile-map">
+        <h2  style="font-family: 'DM Serif Display', serif; font-size: 48px; color: #333; text-align: center; margin: 15px  80px;">
           Our Clinic Location
         </h2>
       </div>
@@ -1120,17 +1105,26 @@
   </div>
 </footer>
 <!-- TINY FOOTER -->
-<div class="tiny-footer" style="background: linear-gradient(135deg, #19327d, #18744c); padding: 4px;">
+<div class="tiny-footer" style="background: linear-gradient(135deg, #19327d, #18744c); padding: 8px 0;">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <div class="copyright-content" style="color: #f1f1f1; font-size: 14px;">
-          aAll rights reserved. Design by <a href="https://designblast.org/" target="_blank" style="color: #f1f1f1; text-decoration: none;">DesignBlast</a>
+        <div class="copyright-content" style="color: #f1f1f1; font-size: 14px; font-weight: 500;">
+          &copy; <span id="currentYear"></span> All Rights Reserved.  
+          <span style="margin-left: 5px;">Designed by  
+            <a href="https://designblast.org/" target="_blank" style="color: #f1f1f1; text-decoration: none; font-weight: 600;">
+              DesignBlast
+            </a>
+          </span>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
 
 
   <!-- jQuery & Bootstrap Scripts -->

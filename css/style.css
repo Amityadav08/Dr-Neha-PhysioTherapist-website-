@@ -845,6 +845,13 @@ section { scroll-margin-top: 80px; }
   }
 }
 
+/* Clinic Address Widget Styling */
+.clinic-address-widget ul a {
+  margin-top: -5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* Responsive font size for About Section heading */
 @media (max-width: 767px) {
   #about h2 {

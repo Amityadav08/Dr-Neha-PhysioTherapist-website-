@@ -176,13 +176,11 @@
     </div>
   </div>
 </section>
-<!-- OVERVIEW SECTION -->
 <!-- Include this in your head or an external CSS file -->
 <style>
   /* Apply margin-top for desktop */
   .responsive-margin {
     margin-top: 25px;
-    
   }
 
   /* Remove margin-top for mobile screens */
@@ -191,6 +189,11 @@
       margin-top: 0;
       margin-left: 10px;
       margin-bottom: 7px;
+    }
+    
+    /* Reduce heading font-size on mobile to prevent wrapping */
+    .biography-card h2 {
+      font-size: 2.4rem !important;
     }
   }
 </style>
@@ -211,8 +214,8 @@
 
       <!-- Biography Card -->
       <div class="col-md-6 d-flex">
-        <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); height: 90%; width: 100%;">
-          <h2 style="font-family: 'DM Serif Display', serif; color: #201f1f; margin-bottom: 8px; font-size: 2.9rem; ">
+        <div class="biography-card" style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); height: 90%; width: 100%;">
+          <h2 style="font-family: 'DM Serif Display', serif; color: #201f1f; margin-bottom: 8px; font-size: 2.9rem;">
             Dr. Neha Goraksha Bidvai
           </h2>
           
@@ -243,7 +246,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- THEREPIES WE OFFERED  SECTION -->
 <section id="services" class="space-medium" style="background-color: #fff; padding: 40px 0;">

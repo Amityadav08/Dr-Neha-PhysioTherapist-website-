@@ -177,19 +177,35 @@
   </div>
 </section>
 <!-- OVERVIEW SECTION -->
+<!-- Include this in your head or an external CSS file -->
+<style>
+  /* Apply margin-top for desktop */
+  .responsive-margin {
+    margin-top: 25px;
+    
+  }
 
-
+  /* Remove margin-top for mobile screens */
+  @media (max-width: 767.98px) {
+    .responsive-margin {
+      margin-top: 0;
+      margin-left: 10px;
+      margin-bottom: 7px;
+    }
+  }
+</style>
 
 <!-- ABOUT SECTION -->
 <section id="about" class="space-medium" style="background: linear-gradient(135deg, #f8faff 0%, #e8f5f9 100%); padding: 80px 0;">
   <div class="container h-100">
-    <div class="row align-items-stretch h-100"> <!-- Full height row -->
+    <div class="row align-items-stretch h-100">
+      
       <!-- Doctor Photo -->
-      <div class="col-md-6 mb-4 mb-md-0">
-        <div style=>
-          <img src="images/drsample.webp" alt="Dr. Neha Goraksha Bidvai" 
-               class="img-fluid h-100"
-               style="object-fit: cover; object-position: center; width: 87%; border-radius: 15px;">
+      <div class="col-md-6 mb-4 mb-md-0 d-flex align-items-center justify-content-md-start justify-content-center">
+        <div class="responsive-margin" style="width: 87%;">
+          <img src="images/galary pic/clinicimg.png" alt="Dr. Neha Goraksha Bidvai" 
+               class="img-fluid"
+               style="object-fit: cover; object-position: center; width: 100%; border-radius: 15px;">
         </div>
       </div>
 
@@ -223,9 +239,12 @@
           </div>
         </div>
       </div>
+      
     </div>
   </div>
 </section>
+
+
 <!-- THEREPIES WE OFFERED  SECTION -->
 <section id="services" class="space-medium" style="background-color: #fff; padding: 40px 0;">
   <div class="container">
